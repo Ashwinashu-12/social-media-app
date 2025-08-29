@@ -1,0 +1,24 @@
+/* frontend/src/pages/SearchUsers.css */
+.search-users {
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .search-users input {
+    width: 70%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .search-users button {
+    padding: 0.5rem 1rem;
+  }
+  
+  .user-card {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  

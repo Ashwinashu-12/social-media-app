@@ -1,0 +1,89 @@
+/* src/pages/Home.css */
+
+.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .home h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Style each post card wrapper */
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Loader or message styles */
+  .home .loading,
+  .home .no-posts {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 50px;
+  }
+
+  /* src/pages/Home.css */
+
+.home {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .home h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .no-posts {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 40px;
+  }
+  
+  .home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .home-container h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-page {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .home-page h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

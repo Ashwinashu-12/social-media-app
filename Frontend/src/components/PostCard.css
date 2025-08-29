@@ -1,0 +1,293 @@
+/* Base Styles */
+.post-card {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 100%;
+  height: 300px; /* ✅ FIXED height */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.post-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.like-btn {
+  background-color: #6c63ff;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.comment-section {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.comment {
+  margin: 5px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.comment strong {
+  color: #007bff;
+}
+
+.comment-input {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.comment-input button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-input button:hover {
+  background-color: #218838;
+}
+
+.no-comments {
+  color: #999;
+  font-style: italic;
+}
+
+.post-time {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.01);
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  font-size: 30px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #f1f1f1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #f80000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .post-card {
+    padding: 15px;
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  .post-title {
+    font-size: 1.3rem;
+  }
+
+  .post-content {
+    font-size: 0.9rem;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .comment-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .comment-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .comment-input button {
+    width: 100%;
+  }
+
+  .image-container {
+    height: 250px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    max-height: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .post-title {
+    font-size: 1.1rem;
+  }
+
+  .post-content {
+    font-size: 0.85rem;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+
+  .post-actions button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .comment-input input {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .comment-input button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
